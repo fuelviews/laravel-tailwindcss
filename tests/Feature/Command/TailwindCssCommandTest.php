@@ -4,7 +4,6 @@ namespace Fuelviews\Tailwindcss\Tests\Feature\Command;
 
 use Fuelviews\Tailwindcss\Tests\TestCase;
 use Illuminate\Support\Facades\File;
-use Illuminate\Support\Facades\Storage;
 
 class TailwindCssCommandTest extends TestCase
 {
