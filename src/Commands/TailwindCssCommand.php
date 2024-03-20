@@ -39,7 +39,6 @@ class TailwindCssCommand extends Command
             '@tailwindcss/typography',
             'autoprefixer',
             'postcss',
-            'dotenv',
             'tailwindcss',
         ];
 
