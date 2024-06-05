@@ -35,4 +35,4 @@ jobs:
         with:
           tag_name: ${{ steps.bump_version.outputs.new_tag }}
           generate_release_notes: true
-          token: ${{ secrets.GHA_PERSONAL_ACCESS_TOKEN }}
+
