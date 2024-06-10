@@ -2,6 +2,14 @@
 
 All notable changes to `laravel-tailwindcss` will be documented in this file.
 
+## v0.0.2 - 2024-06-10
+
+### What's Changed
+
+* Added a new path to the content array in tailwind.config.js.stub to include files from the vendors/fuelviews directory, in order to ensure that the styles from those files are also applied. by @thejmitchener in https://github.com/fuelviews/laravel-tailwindcss/pull/15
+
+**Full Changelog**: https://github.com/fuelviews/laravel-tailwindcss/compare/v0.0.1...v0.0.2
+
 ## v0.0.1 - 2024-06-05
 
 ### What's Changed
