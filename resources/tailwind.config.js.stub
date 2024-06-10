@@ -6,6 +6,7 @@ import typography from '@tailwindcss/typography';
 export default {
     content: [
         './resources/**/*.{js,vue,blade.php}',
+        './vendors/fuelviews/**/resources/**/*.{js,vue,blade.php}'
     ],
     theme: {
         extend: {},
