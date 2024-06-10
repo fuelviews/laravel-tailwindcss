@@ -1,3 +1,19 @@
 # Changelog
 
 All notable changes to `laravel-tailwindcss` will be documented in this file.
+
+## v0.0.1 - 2024-06-05
+
+### What's Changed
+
+* Refactored README.md to provide a comprehensive description of the Fu… by @thejmitchener in https://github.com/fuelviews/laravel-tailwindcss/pull/2
+* Bump actions/setup-node from 3 to 4 by @dependabot in https://github.com/fuelviews/laravel-tailwindcss/pull/4
+* Bump anothrNick/github-tag-action from 1.67.0 to 1.69.0 by @dependabot in https://github.com/fuelviews/laravel-tailwindcss/pull/11
+* Bump @tailwindcss/typography from 0.5.10 to 0.5.13 by @dependabot in https://github.com/fuelviews/laravel-tailwindcss/pull/13
+* Updates stub and readme by @thejmitchener in https://github.com/fuelviews/laravel-tailwindcss/pull/14
+
+### New Contributors
+
+* @thejmitchener made their first contribution in https://github.com/fuelviews/laravel-tailwindcss/pull/2
+
+**Full Changelog**: https://github.com/fuelviews/laravel-tailwindcss/commits/v0.0.1
