@@ -16,7 +16,7 @@ class TailwindCssCommand extends Command
 {
     public $signature = 'tailwindcss:install';
 
-    public $description = 'Install tailwindcss, postcss, and supporting dependencies';
+    public $description = 'Install tailwindcss, postcss, and dependencies';
 
     /**
      * Execute the console command.
