@@ -2,6 +2,14 @@
 
 All notable changes to `laravel-tailwindcss` will be documented in this file.
 
+## v0.0.3 - 2024-06-11
+
+### What's Changed
+
+* Update tailwind config stub by @thejmitchener in https://github.com/fuelviews/laravel-tailwindcss/pull/16
+
+**Full Changelog**: https://github.com/fuelviews/laravel-tailwindcss/compare/v0.0.2...v0.0.3
+
 ## v0.0.2 - 2024-06-10
 
 ### What's Changed
