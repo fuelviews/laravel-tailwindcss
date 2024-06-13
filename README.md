@@ -2,10 +2,10 @@
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/fuelviews/laravel-tailwindcss.svg?style=flat-square)](https://packagist.org/packages/fuelviews/laravel-tailwindcss)
 [![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/fuelviews/laravel-tailwindcss/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/fuelviews/laravel-tailwindcss/actions?query=workflow%3Arun-tests+branch%3Amain)
-[![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/fuelviews/laravel-tailwindcss/fix-php-code-style-issues.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/fuelviews/laravel-tailwindcss/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)
+[![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/fuelviews/laravel-tailwindcss/fix-php-code-style-issues.yml?label=code%20style&style=flat-square)](https://github.com/fuelviews/laravel-tailwindcss/actions?query=workflow%3A"Fix+PHP+code+style+issues")
 [![Total Downloads](https://img.shields.io/packagist/dt/fuelviews/laravel-tailwindcss.svg?style=flat-square)](https://packagist.org/packages/fuelviews/laravel-tailwindcss)
 
-Laravel TailwindCSS package offers an effortless solution for integrating the TailwindCSS framework into Laravel projects, enhancing front-end development with its utility-first CSS approach.
+Laravel tailwindcss package offers an effortless solution for integrating the tailwindcss css framework into Laravel projects.
 
 ## Installation
 
@@ -43,7 +43,7 @@ Please review [our security policy](../../security/policy) on how to report secu
 
 - [Thejmitchener](https://github.com/thejmitchener)
 - [Fuelviews](https://github.com/fuelviews)
-- [Tailwind](https://github.com/tailwindlabs/tailwindcss)
+- [Tailwindcss](https://github.com/tailwindlabs/tailwindcss)
 - [All Contributors](../../contributors)
 
 ## Support us

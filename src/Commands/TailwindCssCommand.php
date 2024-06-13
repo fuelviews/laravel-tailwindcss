@@ -1,7 +1,5 @@
 <?php
 
-/** @noinspection ALL */
-
 namespace Fuelviews\Tailwindcss\Commands;
 
 use Illuminate\Console\Command;
@@ -10,11 +8,9 @@ use JsonException;
 use Symfony\Component\Process\Exception\ProcessFailedException;
 use Symfony\Component\Process\Process;
 
-use function Laravel\Prompts\confirm;
-
 class TailwindCssCommand extends Command
 {
-    public $signature = 'tailwindcss:install';
+    public $signature = 'tailwindcss:install {--force : Overwrite existing files without prompting for confirmation}';
 
     public $description = 'Install tailwindcss, postcss, and dependencies';
 
@@ -30,9 +26,11 @@ class TailwindCssCommand extends Command
      */
     public function handle(): int
     {
-        $this->publishConfig('tailwind.config.js');
-        $this->publishConfig('postcss.config.js');
-        $this->publishAppCss();
+        $force = $this->option('force');
+
+        $this->publishConfig('tailwind.config.js', $force);
+        $this->publishConfig('postcss.config.js', $force);
+        $this->publishAppCss($force);
 
         $devDependencies = [
             '@tailwindcss/forms',
@@ -49,23 +47,24 @@ class TailwindCssCommand extends Command
 
     /**
      * Publishes a configuration file from the package's stubs to the project base path.
-     * If the file already exists, it prompts the user for permission to overwrite.
+     * If the file already exists, it checks for the --force flag to overwrite.
      *
      * @param  string  $configFileName  The name of the config file to publish.
+     * @param  bool    $force           Whether to force overwrite existing files.
      */
-    protected function publishConfig(string $configFileName): void
+    protected function publishConfig(string $configFileName, bool $force): void
     {
         $stubPath = __DIR__."/../../resources/$configFileName.stub";
         $destinationPath = base_path($configFileName);
 
         if (File::exists($destinationPath)) {
-            if (confirm("$configFileName already exists. Do you want to overwrite it?", false)) {
+            if ($force) {
                 File::copy($stubPath, $destinationPath);
                 $this->info("$configFileName has been overwritten successfully.");
             } else {
-                $this->warn("Skipping $configFileName installation.");
+                $this->warn("Skipping $configFileName installation because it already exists.");
             }
-        } elseif (confirm("$configFileName does not exist. Would you like to install it now?", true)) {
+        } else {
             File::copy($stubPath, $destinationPath);
             $this->info("$configFileName has been installed successfully.");
         }
@@ -73,9 +72,11 @@ class TailwindCssCommand extends Command
 
     /**
      * Publishes the application's main CSS file from the package's stubs to the Laravel resource path.
-     * If the CSS file already exists, it prompts the user for permission to overwrite.
+     * If the CSS file already exists, it checks for the --force flag to overwrite.
+     *
+     * @param  bool  $force  Whether to force overwrite existing files.
      */
-    protected function publishAppCss(): void
+    protected function publishAppCss(bool $force): void
     {
         $stubPath = __DIR__.'/../../resources/css/app.css.stub';
         $destinationPath = resource_path('css/app.css');
@@ -85,13 +86,13 @@ class TailwindCssCommand extends Command
         }
 
         if (File::exists($destinationPath)) {
-            if (confirm('css/app.css file already exists. Do you want to overwrite it?', false)) {
+            if ($force) {
                 File::copy($stubPath, $destinationPath);
                 $this->info('css/app.css file has been overwritten successfully.');
             } else {
-                $this->warn('Skipping css/app.css installation.');
+                $this->warn('Skipping css/app.css installation because it already exists.');
             }
-        } elseif (confirm('css/app.css file does not exist. Would you like to install it now?', true)) {
+        } else {
             File::copy($stubPath, $destinationPath);
             $this->info('css/app.css file has been installed successfully.');
         }

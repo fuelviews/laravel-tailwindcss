@@ -1,6 +1,6 @@
 {
     "name": "fuelviews/laravel-tailwindcss",
-    "description": "Fuelviews laravel tailwindcss package",
+    "description": "Laravel tailwindcss package",
     "keywords": [
         "fuelviews",
         "laravel",
@@ -16,13 +16,13 @@
         {
             "name": "Joshua Mitchener",
             "email": "support@fuelviews.com",
+            "homepage": "https://fuelviews.com",
             "role": "Developer"
         }
     ],
     "require": {
         "php": "^8.2",
-        "spatie/laravel-package-tools": "^1.16",
-        "laravel/prompts": "^0.1.16"
+        "spatie/laravel-package-tools": "^1.16"
     },
     "require-dev": {
         "laravel/pint": "^1.14",
