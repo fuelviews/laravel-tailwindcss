@@ -50,7 +50,7 @@ class TailwindCssCommand extends Command
      * If the file already exists, it checks for the --force flag to overwrite.
      *
      * @param  string  $configFileName  The name of the config file to publish.
-     * @param  bool    $force           Whether to force overwrite existing files.
+     * @param  bool  $force  Whether to force overwrite existing files.
      */
     protected function publishConfig(string $configFileName, bool $force): void
     {
