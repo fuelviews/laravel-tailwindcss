@@ -2,6 +2,14 @@
 
 All notable changes to `laravel-tailwindcss` will be documented in this file.
 
+## v0.0.4 - 2024-06-13
+
+### What's Changed
+
+* Refactored the package description and fixed some typos in the READMEmd file. Updated the composer.json file to correct the package description. Modified the TailwindCssCommand.php file to add an option to force overwrite existing files without prompting for confirmation. by @thejmitchener in https://github.com/fuelviews/laravel-tailwindcss/pull/17
+
+**Full Changelog**: https://github.com/fuelviews/laravel-tailwindcss/compare/v0.0.3...v0.0.4
+
 ## v0.0.3 - 2024-06-11
 
 ### What's Changed
