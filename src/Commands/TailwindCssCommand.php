@@ -54,7 +54,7 @@ class TailwindCssCommand extends Command
      */
     protected function publishConfig(string $configFileName, bool $force): void
     {
-        $stubPath = __DIR__."/../../resources/$configFileName.stub";
+        $stubPath = __DIR__."/../../stubs/$configFileName.stub";
         $destinationPath = base_path($configFileName);
 
         if (File::exists($destinationPath)) {
@@ -78,7 +78,7 @@ class TailwindCssCommand extends Command
      */
     protected function publishAppCss(bool $force): void
     {
-        $stubPath = __DIR__.'/../../resources/css/app.css.stub';
+        $stubPath = __DIR__.'/../../stubs/css/app.css.stub';
         $destinationPath = resource_path('css/app.css');
 
         if (! File::exists(dirname($destinationPath))) {
