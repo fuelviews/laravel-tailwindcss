@@ -2,6 +2,14 @@
 
 All notable changes to `laravel-tailwindcss` will be documented in this file.
 
+## v0.0.5 - 2024-07-10
+
+### What's Changed
+
+* Refactored file paths to use the stubs directory instead of resources directory for configuration and CSS files. Updated package name to tailwindcss in the TailwindCssServiceProvider. by @thejmitchener in https://github.com/fuelviews/laravel-tailwindcss/pull/18
+
+**Full Changelog**: https://github.com/fuelviews/laravel-tailwindcss/compare/v0.0.4...v0.0.5
+
 ## v0.0.4 - 2024-06-13
 
 ### What's Changed
