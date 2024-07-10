@@ -78,7 +78,7 @@ class TailwindCssCommand extends Command
      */
     protected function publishAppCss(bool $force): void
     {
-        $stubPath = __DIR__ . '/../../stubs/css/app.css.stub';
+        $stubPath = __DIR__.'/../../stubs/css/app.css.stub';
         $destinationPath = resource_path('css/app.css');
 
         if (! File::exists(dirname($destinationPath))) {
