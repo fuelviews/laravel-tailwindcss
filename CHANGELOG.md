@@ -2,6 +2,14 @@
 
 All notable changes to `laravel-tailwindcss` will be documented in this file.
 
+## v0.0.6 - 2025-02-06
+
+### What's Changed
+
+* Bump dependabot/fetch-metadata from 2.1.0 to 2.3.0 by @dependabot in https://github.com/fuelviews/laravel-tailwindcss/pull/22
+
+**Full Changelog**: https://github.com/fuelviews/laravel-tailwindcss/compare/v0.0.5...v0.0.6
+
 ## v0.0.5 - 2024-07-10
 
 ### What's Changed
