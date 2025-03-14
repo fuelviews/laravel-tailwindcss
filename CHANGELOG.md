@@ -2,6 +2,14 @@
 
 All notable changes to `laravel-tailwindcss` will be documented in this file.
 
+## v0.0.7 - 2025-03-14
+
+### What's Changed
+
+* Bump aglipanci/laravel-pint-action from 2.4 to 2.5 by @dependabot in https://github.com/fuelviews/laravel-tailwindcss/pull/23
+
+**Full Changelog**: https://github.com/fuelviews/laravel-tailwindcss/compare/v0.0.6...v0.0.7
+
 ## v0.0.6 - 2025-02-06
 
 ### What's Changed
