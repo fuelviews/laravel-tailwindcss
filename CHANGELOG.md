@@ -2,6 +2,14 @@
 
 All notable changes to `laravel-tailwindcss` will be documented in this file.
 
+## v0.0.8 - 2025-07-08
+
+### What's Changed
+
+* Bump stefanzweifel/git-auto-commit-action from 5 to 6 by @dependabot in https://github.com/fuelviews/laravel-tailwindcss/pull/26
+
+**Full Changelog**: https://github.com/fuelviews/laravel-tailwindcss/compare/v0.0.7...v0.0.8
+
 ## v0.0.7 - 2025-03-14
 
 ### What's Changed
